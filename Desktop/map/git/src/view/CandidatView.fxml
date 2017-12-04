@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="600.0" style="-fx-background-image: url(&quot;pictures/background-image.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CandidatController">
+   <children>
+      <ImageView fitHeight="72.0" fitWidth="444.0" layoutX="89.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/ubb-logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="filter" layoutX="53.0" layoutY="98.0" onKeyReleased="#handleFilterLookUp" prefHeight="31.0" prefWidth="378.0" promptText="Filter" />
+      <ComboBox fx:id="cboFilters" layoutX="437.0" layoutY="98.0" prefHeight="31.0" prefWidth="117.0" promptText="Filtre" visibleRowCount="4" />
+      <TableView fx:id="tableView" layoutX="53.0" layoutY="141.0" onMouseClicked="#showOptions" prefHeight="202.0" prefWidth="291.0">
+        <columns>
+          <TableColumn fx:id="columnNume" prefWidth="92.0" text="Nume" />
+          <TableColumn fx:id="columnTelefon" prefWidth="63.0" text="Telefon" />
+            <TableColumn fx:id="columnSex" prefWidth="48.0" text="Sex" />
+            <TableColumn fx:id="columnMail" prefWidth="110.0" text="E-mail" />
+        </columns>
+      </TableView>
+      <Label layoutX="396.0" layoutY="141.0" prefHeight="31.0" prefWidth="124.0" text="Optiuni Candidat">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="362.0" layoutY="172.0" prefHeight="123.0" prefWidth="191.0" />
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="398.0" layoutY="307.0" onMouseClicked="#handleAddOptiune" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="88.0" layoutX="467.0" layoutY="307.0" onMouseClicked="#handleStergeOptiune" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="53.0" layoutY="351.0" onMouseClicked="#handleButtonAdauga" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/save-candidat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="287.0" layoutY="351.0" onMouseClicked="#handleButtonSterge" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/delete-candidat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="170.0" layoutY="351.0" onMouseClicked="#handleButtonModifica" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/update-candidat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="25.0" layoutY="22.0" onMouseClicked="#handleButtonBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+2;Ioan Bogdan Mihai;0723018221;ibir2121@scs.ubbcluj.ro;Masculin
+3;Holerga Alisa Ioana;0741163247;hair2117@scs.ubbcluj.ro;Feminin
+1;Alin;0777777777;B@g.com;Feminin
+5;bos;0723000112;bos@g.com;Masculin

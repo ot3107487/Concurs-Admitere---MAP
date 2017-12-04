@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="493.0" style="-fx-background-image: url(&quot;pictures/background-image.jpg&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="419.0" layoutX="35.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/ubb-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="132.0" layoutX="104.0" layoutY="287.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/lazar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="132.0" layoutX="288.0" layoutY="287.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/camelia.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="71.0" layoutX="211.0" layoutY="316.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/vs.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="166.0" layoutX="35.0" layoutY="167.0" onMouseClicked="#handleButtonCandidati" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/candidati.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="166.0" layoutX="288.0" layoutY="167.0" onMouseClicked="#handleButtonSectii" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/sectii.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

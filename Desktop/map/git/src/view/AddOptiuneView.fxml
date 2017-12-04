@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="400.0" prefWidth="290.0" style="-fx-background-image: url(&quot;pictures/background-add-optiune.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddOptiuneController">
+   <children>
+      <ListView fx:id="listView" layoutX="28.0" layoutY="34.0" prefHeight="217.0" prefWidth="234.0" />
+      <ImageView fitHeight="86.0" fitWidth="97.0" layoutX="97.0" layoutY="289.0" onMouseClicked="#handleButtonSave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/yes-purple.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
